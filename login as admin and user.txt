@@ -1,0 +1,17 @@
+login as admin
+
+email: ahmedelshal@gmail.com
+password: 123456789ahmed
+
+or 
+
+email: ahmedelshal2020@gmail.com
+passowrd: 123456789ahmed
+=======================================
+login as user 
+
+email: ahmedelshal@gmail.com
+password: 123456789ahmed
+
+====================
+Thank you

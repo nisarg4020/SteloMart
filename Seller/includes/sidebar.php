@@ -4,19 +4,19 @@
 
 <?php
 
-$customer_session = $_SESSION['customer_email'];
+$Seller_session = $_SESSION['Seller_email'];
 
-$get_customer = "select * from customers where customer_email='$customer_session'";
+$get_Seller = "select * from Sellers where Seller_email='$Seller_session'";
 
-$run_customer = mysqli_query($con,$get_customer);
+$run_Seller = mysqli_query($con,$get_Seller);
 
-$row_customer = mysqli_fetch_array($run_customer);
+$row_Seller = mysqli_fetch_array($run_Seller);
 
-$customer_image = $row_customer['customer_image'];
+$Seller_image = $row_Seller['Seller_image'];
 
-$customer_name = $row_customer['customer_name'];
+$Seller_name = $row_Seller['Seller_name'];
 
-if(!isset($_SESSION['customer_email'])){
+if(!isset($_SESSION['Seller_email'])){
 
 
 }
@@ -26,13 +26,13 @@ echo "
 
 <center>
 
-<img src='customer_images/$customer_image' class='img-responsive'>
+<img src='Seller_images/$Seller_image' class='img-responsive'>
 
 </center>
 
 <br>
 
-<h3 align='center' class='panel-title'> Name : $customer_name </h3>
+<h3 align='center' class='panel-title'> Name : $Seller_name </h3>
 
 ";
 

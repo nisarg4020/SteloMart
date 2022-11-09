@@ -4,7 +4,7 @@ session_start();
 
 if(!isset($_SESSION['Seller_email'])){
 
-echo "<script>window.open('../checkout.php','_self')</script>";
+echo "<script>window.open('../seller_login.php','_self')</script>";
 
 
 }else {
@@ -61,10 +61,6 @@ echo "Welcome : " . $_SESSION['Seller_email'] . "";
 ?>
 </a>
 
-<a href="#">
-Shopping Cart Total Price: <?php total_price(); ?>, Total Items <?php items(); ?>
-</a>
-
 </div><!-- col-md-6 offer Ends -->
 
 <div class="col-md-6"><!-- col-md-6 Starts -->
@@ -81,12 +77,12 @@ Register
 
 if(!isset($_SESSION['seller_email'])){
 
-echo "<a href='../checkout.php' >My Account</a>";
+echo "<a href='../seller_login.php' >My Account</a>";
 
 }
 else{
 
-echo "<a href='my_account.php?my_orders'>My Account</a>";
+echo "<a href='my_account.php?my_status'>My Account</a>";
 
 }
 
@@ -105,7 +101,7 @@ Go to Cart
 
 if(!isset($_SESSION['Seller_email'])){
 
-echo "<a href='../checkout.php'> Login </a>";
+echo "<a href='../seller_login.php'> Login </a>";
 
 }else {
 
@@ -171,9 +167,9 @@ echo "<a href='logout.php'> Logout </a>";
 <li class="active">
 <?php
 
-if(!isset($_SESSION['customer_email'])){
+if(!isset($_SESSION['Seller_email'])){
 
-echo "<a href='../checkout.php' >My Account</a>";
+echo "<a href='../seller_login.php' >My Account</a>";
 
 }
 else{

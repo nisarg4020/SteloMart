@@ -55,23 +55,6 @@ if (!isset($_SESSION['customer_email'])) {
 ?>
                 </a>
 
-                <a href="#" class="btn btn-success btn-sm">
-                    <?php
-
-if (!isset($_SESSION['Seller_email'])) {
-
-    echo "Welcome :Guest";
-
-
-} else {
-
-    echo "Welcome : " . $_SESSION['Seller_email'] . "";
-
-}
-
-?>
-
-                </a>
 
                 <a href="#">
                     Shopping Cart Total Price:
@@ -154,7 +137,7 @@ if (!isset($_SESSION['customer_email'])) {
                 <a class="navbar-brand home" href="index.php">
                     <!--- navbar navbar-brand home Starts -->
 
-                    <img src="images/EcommerceStore.png" alt="computerfever logo" class="hidden-xs">
+                    <img src="images/EcommerceStore.png" alt="computerfever123 logo" class="hidden-xs">
                     <img src="images/EcommerceStoreSmall.png" alt="computerfever logo" class="visible-xs">
 
                 </a>
